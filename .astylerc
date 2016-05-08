@@ -1,0 +1,14 @@
+--mode=c
+--indent=tab
+--indent-classes
+--indent-switches
+--indent-col1-comments
+--pad-oper
+--align-pointer=name
+--add-brackets
+--preserve-date
+--lineend=linux
+--attach-namespaces
+--attach-extern-c
+--align-reference=name
+--max-code-length=80
