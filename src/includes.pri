@@ -1,7 +1,14 @@
 CONFIG += c++11
 
 HEADERS += \
-    $$PWD/removeme.h
+    $$PWD/number.h \
+    $$PWD/integer.h \
+    $$PWD/max.h \
+    $$PWD/double.h \
+    $$PWD/min.h
 
 SOURCES += \
-    $$PWD/removeme.cpp
+    $$PWD/integer.cpp \
+    $$PWD/max.cpp \
+    $$PWD/double.cpp \
+    $$PWD/min.cpp

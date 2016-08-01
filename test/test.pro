@@ -12,7 +12,10 @@ SOURCES +=\
 
 HEADERS  += \
     autotest.h \
-    testremoveme.h
+    testinteger.h \
+    testmax.h \
+    testdouble.h \
+    testmin.h
 
 #Include dependencies if required
 LIBS +=

@@ -10,6 +10,12 @@
 const double EPSILON = 0.00001;
 #endif
 
+#define EXPECT(statement, desc) \
+    do { \
+        if (!QTest::qVerify((statement), #statement, desc, __FILE__, __LINE__)) \
+            return; \
+    } while (0)
+
 namespace AutoTest {
 typedef QList<QObject *> TestList;
 
