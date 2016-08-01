@@ -5,6 +5,7 @@
 VERSION = 0.1.0
 
 # Need to discard STDERR so get path to NULL device
+# Note: Change the NULL_DEVICE redirect IO to discover any git errors
 win32 {
     NULL_DEVICE = NUL # Windows doesn't have /dev/null but has NUL
 } else {
@@ -12,7 +13,7 @@ win32 {
 }
 
 # Need to call git with manually specified paths to repository
-BASE_GIT_COMMAND = git --git-dir $$shell_quote($$PWD/.git) --work-tree $$PWD
+BASE_GIT_COMMAND = git --git-dir $$PWD/../.git --work-tree $$PWD
 
 # Trying to get version from git tag / revision
 GIT_VERSION = $$system($$BASE_GIT_COMMAND describe --always --tags 2> $$NULL_DEVICE)
